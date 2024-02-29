@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarSize="20sp"
+    tools:context=".MainActivityy">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="412dp"
+        android:layout_height="135dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:scrollbarSize="30sp"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Olá, Ana"
+        app:titleTextColor="#EAE1E1" />
+
+    <Button
+        android:id="@+id/btnPix_click"
+        android:layout_width="51dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="168dp"
+        android:onClick="btnPix_click"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnPagar_click"
+        android:layout_width="52dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="168dp"
+        android:onClick="btnPagar_click"
+        app:layout_constraintStart_toEndOf="@+id/btnPix_click"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnTransferir_click"
+        android:layout_width="50dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="168dp"
+        android:onClick="btnTransferir_click"
+        app:layout_constraintStart_toEndOf="@+id/btnPagar_click"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <Button
+        android:id="@+id/btnDepositar_click"
+        android:layout_width="52dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="72dp"
+        android:onClick="btnDepositar_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnTransferir_click"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaldo" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:text="Conta"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="5000.00"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.115"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="9dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="72dp"
+        android:text=">"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="144dp"
+        android:text="Área Pix"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPix_click"
+        app:layout_constraintVertical_bias="0.491"
+        tools:layout_editor_absoluteX="36dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="144dp"
+        android:text="Pagar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/btnPagar_click"
+        app:layout_constraintVertical_bias="0.508" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="120dp"
+        android:text="Transferir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/btnTransferir_click"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="Depositar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/btnDepositar_click"
+        app:layout_constraintVertical_bias="0.41" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

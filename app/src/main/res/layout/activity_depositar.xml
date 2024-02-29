@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Depositar">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="532dp"
+        android:layout_height="134dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:navigationIcon="?attr/actionModeCloseDrawable"
+        app:title="Depositar"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/btnDepositar"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="180dp"
+        android:text="Depositar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtValorDepositar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/edtValorDepositar"
+        android:layout_width="252dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:hint="Digite o valor:"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="52dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
